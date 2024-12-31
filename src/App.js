@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './logg.png';
 // import './App.css';
 
 // function App() {
@@ -38,27 +38,31 @@ const App = () => {
   };
 
   return (
-    <div className="container">
+    <div>
       <div>
-      
+      <img src={logo} className="App-logo" alt="logo" />
       </div>
-      <form className="form" onSubmit={handleSubmit}>
-        <h1>VWDA</h1>
-        <p>Check the authenticity of your certificate</p>
-        <div>
-          <input
-            type="text"
-            className="input"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-            placeholder="Enter cert no."
-          />
-        </div>
+      
+      <div className="container">
+        <form className="form" onSubmit={handleSubmit}>
+          <h1>VWDA</h1>
+          <p>Check the authenticity of your certificate</p>
+          <div>
+            <input
+              type="text"
+              className="input"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+              placeholder="Enter cert no."
+            />
+          </div>
 
-        <button type="submit" className="button">
-          Verify
-        </button>
-      </form>
+          <button type="submit" className="button">
+            Verify
+          </button>
+        </form>
+      </div>
+      
     </div>
   );
 };

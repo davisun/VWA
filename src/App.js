@@ -39,8 +39,11 @@ const App = () => {
 
   return (
     <div className="container">
+      <div>
+      
+      </div>
       <form className="form" onSubmit={handleSubmit}>
-        <h1>VWA</h1>
+        <h1>VWDA</h1>
         <p>Check the authenticity of your certificate</p>
         <div>
           <input
